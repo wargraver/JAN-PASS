@@ -1,0 +1,377 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Baloo+Da+2:500&display=swap');
+html{
+  scroll-behavior: smooth;
+}
+
+*{
+  font-family: "Baloo Da 2", sans-serif;
+
+}
+
+/*----------------------------------------LOGIN---------------------------------*/
+
+
+
+.login-page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-image: linear-gradient(to right bottom ,rgb(231, 143, 9,0.7),rgba(238, 126, 42, 0.8));
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0% 0%,100% 0%,100% 75%,50% 100%,0% 75%);
+}
+li, a, button{
+  font-family: "Baloo Da 2", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+
+}
+header{
+  display: flex;
+  font-family: "Baloo Da 2", sans-serif;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 5%;
+  background-color: black;
+  border-radius: 40px;
+  margin: 3px;
+}
+.nav-links{
+  list-style: none;
+  font-family: "Baloo Da 2", sans-serif;
+}
+.nav-links li{
+  display: inline-block;
+  padding: 0px 20px;font-family: "Baloo Da 2", sans-serif;
+}
+.nav-links li a{
+  transition: all 0.3s ease 0s;
+}
+.nav-links li a:hover{
+  color: #FF9933;
+  
+}
+button{
+  padding: 9px 25px;
+  background-color: #FF9933;
+  border:none;
+  border-radius: 50px;
+  transition: all 0.3s ease 0s;
+  font-family: "Baloo Da 2", sans-serif;
+}
+button:hover{
+  background-color: #138808;
+  cursor: pointer;
+}
+button:active{
+  background-color: #138808;
+  cursor: pointer;
+  
+}
+footer{
+    background-color: black;
+    height: 10vh;
+    
+}
+.footer-text{
+   text-align: center;
+   
+   color: #e65c00;
+}
+
+/*----------------------------------------------------Home-Page--------------------------------------------------------*/
+.home-block-1{
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "shape text";
+    grid-template-columns: 1fr 1fr;
+}
+.home__block-1__shape{
+    background-image: linear-gradient(to right bottom ,rgb(231, 143, 9,0.7),rgba(238, 126, 52, 0.8)),url("block-1.png");
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 0,100% 50%,0% 100%);
+}
+.home__block-1__text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.safron{
+    color:#e65c00;
+    font-weight: 400px;
+    font-size: 85px;
+  }
+
+.green{
+    color: #138808;
+    font-size: 85px;
+    font-weight: 400px;
+  }
+h2{
+    margin: 80px;
+    text-align: center;
+    font-size: 40px;
+    color: navy;
+}
+  .home-block-2{
+    height: 70vh;
+    display: grid;
+    grid-template-areas: "left-text right-image";
+    grid-template-columns: 1fr 1fr;
+  }
+  .text-area{
+      
+    grid-area: left-text;
+    border-radius: 30px;
+  background-color: bisque;
+    text-align: center;
+    margin: 10px;
+    line-height: 35px;
+    font-size: 17px;
+    font-weight: 600px;
+  }
+  .emphasis{
+      color: red;
+      font-size: 20px;
+      margin: 20px;
+      text-align: center;
+  }
+  .image-area{
+    grid-area: right-image;
+    background: url("./block-2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  .home-block-3{
+      font-size: 60px;
+      display: grid;
+      height: 90vh;
+      grid-template-areas: "confirmed recovered deaths";
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+  .confirm{
+      color: grey;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .recover{
+      color: #138808;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.death{
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.bottom-text{
+    text-align: center;
+    height: 20vh;
+    font-weight: 70px;
+    font-size: 35px;
+    color: red;
+}
+/*--------------------------------------------Pass-Page--------------------------------------------------------------*/
+.pass-block-1{
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "text shape";
+    grid-template-columns: 1fr 1fr;
+}
+.pass-block-1-shape{
+    grid-area: shape;
+    background-image: linear-gradient(to right bottom ,rgb(231, 143, 9,0.7),rgba(238, 126, 52, 0.8)),url("block-1.png");
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(100% 0%,100% 100%,0% 50%);
+}
+.pass-block-1-text{
+    grid-area: text;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.pass-block-2{
+    border-radius: 20px;
+    font-family: "Baloo Da 2", sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(to right bottom ,rgba(78, 180, 30, 0.7),rgba(79, 187, 46, 0.8));
+    background-size: cover;
+    clip-path: polygon(0% 0%,80% 0%,100% 20%,100% 100%,20% 100%,0% 80%);
+}
+.instruction{
+    cursor: default;
+  text-align: justify;
+    font-family: "Baloo Da 2", sans-serif;
+    font-size: 22px;
+    line-height: 40px;
+  }
+  .num{
+    font-family: "Baloo Da 2", sans-serif;
+    color:navy;font-weight: 100px;
+    font-size: 30px;
+  }
+  .pass-block-3{
+      height: 100vh;
+      
+      display: grid;
+      grid-template-areas: "input qr";
+      grid-template-columns: 1fr 1fr;
+  }
+  form > input, select{
+    font-family: "Baloo Da 2", sans-serif;
+    width: 100%;
+    padding: 15px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #e65c00;
+    border-radius: 30px;
+    box-sizing: border-box;
+  }
+  label{
+    margin-left: 10px;
+    line-height: 20px;
+  }
+  .pass-input{
+      margin-left: 10px;
+      margin-bottom: 20px;
+      border-radius: 30px;
+      border:2px solid #138808;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .pass-qr{
+      background: url("./qr.svg");
+      background-size: contain;
+      background-position: center;
+  }
+  .hidden{
+      text-align: center;
+      color: red;
+  }
+  /*----------------------------------Complain--------------------------------------*/
+  .comp-block-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-image: linear-gradient(to right bottom ,rgba(78, 180, 30, 0.7),rgba(79, 187, 46, 0.8));
+    clip-path: polygon(0% 0%,80% 0%,100% 20%,100% 100%,20% 100%,0% 80%);
+  }
+.comp-block-3{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right bottom ,rgb(231, 143, 9,0.7),rgba(238, 126, 52, 0.8));
+  clip-path: polygon(0% 0%,80% 0%,100% 20%,100% 100%,20% 100%,0% 80%);
+}
+textarea{
+  border-radius: 10px;
+  font-size: 20px;
+  background-color: bisque;
+}
+
+.complain-button{
+  margin-top: 5px;
+}
+
+/*------------------------------------------Help-------------------------------------------*/
+.help-block-2-image{
+  height: 40vh;
+display: grid;
+grid-template-areas: "fever cold breathe";
+grid-template-columns: 1fr 1fr 1fr;
+}
+.help-image-1{
+grid-area: fever;
+background: url("./sym-1.png");
+background-repeat: no-repeat;
+background-size: contain;
+background-position: center;
+
+}
+.help-image-2{
+  grid-area: cold;
+  background: url("./sym-2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.help-image-3{
+  grid-area: breathe;
+  background: url("./sym-3.png");
+background-repeat: no-repeat;
+background-size: contain;
+background-position: center;
+}
+.help-text{
+  margin: 30px;
+  border-radius: 20px;
+  height: 80vh;
+  background-color: #99d6ff;
+  display: flex;
+}
+.help-text-inner{
+  margin: 20px;
+  font-size: 20px;
+  line-height: 30px;
+}
+.help-list-element{
+  color: black;
+  font-size:20px ;
+}
+.help-highlight{
+  background-color: #80ccff;
+  padding: 20px;
+  border-radius: 20px;
+}
+.helpline{
+  display: flex;
+  flex-direction: column;
+  height: 30vh;
+  font-size: 35px;
+  color: red;
+  text-align: center;
+  justify-content: center;
+}
+/*-----------------------------------------Advisory---------------------------------------*/
+.advisory{
+  height: 100vh;
+  background-image: linear-gradient(to right bottom ,#4eb41eb3,rgba(79, 187, 46, 0.8)),url("./back.jpg");
+  background-size: cover;
+  clip-path: polygon(0% 0%,100% 0%,100% 100%,0% 100%);
+  cursor: default;
+  text-align: justify;
+    font-family: "Baloo Da 2", sans-serif;
+    font-size: 23px;
+    line-height: 40px;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   border-radius: 20px;
+   margin: 20px;
+}
